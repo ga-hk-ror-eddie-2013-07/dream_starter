@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @project.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+
+<p>
+  <strong>Funding ended at:</strong>
+  <%= @project.funding_ended_at %>
+</p>
+
+<p>
+  <strong>Funding target amount:</strong>
+  <%= @project.funding_target_amount %>
+</p>
+
+<p>
+  <strong>Dreamer:</strong>
+  <%= @project.dreamer_id %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>
